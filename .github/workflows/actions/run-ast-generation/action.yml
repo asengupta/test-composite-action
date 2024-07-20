@@ -1,31 +1,10 @@
 name: Run Cobol-REKT
 description: "Runs AST generation"
 
-inputs:
-  programName:
-    description: "Program Name"
-    required: true
-  srcDir:
-    description: ""
-    required: true
-  copyBooksDir:
-    description: ""
-    required: true
-  reportDir:
-    description: ""
-    required: true
-  generation:
-    description: ""
-    required: true
-  dialect:
-    description: ""
-    required: true
-
 runs:
   using: "composite"
   steps:
-    - name: Print inputs
+    - name: Greet
       shell: bash
       run: |
-        echo "Cobol-REKT inputs"
-        echo "-------------------"
+        echo "Hello!!"
